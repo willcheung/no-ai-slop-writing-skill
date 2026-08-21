@@ -19,7 +19,7 @@ Proceed when the available context is enough to produce a useful result. Ask a c
 ## Workflow
 
 1. Identify the requested format, point, audience, facts, constraints, and desired level of polish from the available input.
-2. In edit mode, read the full draft and any voice samples. Notice vocabulary, cadence, humor, uncertainty, digressions, and details that make the voice recognizable. Start with selective editing. Regenerate whole passages only when their structure is the problem; a clean rewrite can erase the writer's fingerprints.
+2. In edit mode, read the full draft and any voice samples. With multiple samples, identify traits that recur across them instead of copying a single article's quirks. Notice vocabulary, cadence, humor, uncertainty, digressions, and details that make the voice recognizable. Start with selective editing. Regenerate whole passages only when their structure is the problem; a clean rewrite can erase the writer's fingerprints.
 3. In draft mode, use the supplied brief and context as the factual boundary. Never invent personal experience, pain points, numbers, results, motivations, opinions, testimonials, or other personal details to improve the hook.
 4. Make the piece understandable to someone without prior context. Briefly explain unfamiliar names or references, then keep moving.
 5. Write like spoken thought. Use contractions, natural connectors, occasional repetition, side comments, and uneven sentence lengths when they sound authentic.

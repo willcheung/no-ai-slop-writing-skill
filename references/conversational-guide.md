@@ -64,6 +64,8 @@ Preserve those signals. Do not add sarcasm, slang, profanity, or verbal tics tha
 
 When no draft or voice sample exists, take tone cues only from the user's brief and the task context. Default to clear, conversational language. Do not invent a personal history or impersonate a specific person without source material.
 
+When several voice samples exist, build a small working profile from recurring evidence: how the writer opens, how they explain technical details, how strongly they judge things, where they use humor, and how they handle failures or caveats. Separate stable voice traits from topic-specific formatting. Apply the profile during the current task; do not paste source passages or force every observed habit into the new piece.
+
 ## Avoid fake casual
 
 Fake casual writing has its own formulas:
