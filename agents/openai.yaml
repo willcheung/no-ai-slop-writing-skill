@@ -1,4 +1,4 @@
 interface:
   display_name: "Conversational No-AI-Slop"
-  short_description: "Make writing sound natural and distinctly human"
-  default_prompt: "Use $conversational-no-ai-slop to edit this draft in my natural voice."
+  short_description: "Write or edit natural, distinctly human copy"
+  default_prompt: "Use $conversational-no-ai-slop to write or edit this in a natural, human voice."

@@ -1,32 +1,42 @@
 ---
 name: conversational-no-ai-slop
-description: Rewrite or edit articles, newsletters, social posts, notes, emails, and other copy so it sounds like the writer talking naturally to a smart friend. Use when writing feels stiff, overly polished, corporate, formulaic, grammatically perfect in an unnatural way, or full of AI-slop patterns, while preserving the writer's facts, meaning, humor, uncertainty, and personal voice.
+description: Write or edit articles, newsletters, social posts, notes, emails, and other copy so it sounds like a person talking naturally to a smart friend. Use to create copy from a brief, notes, source material, or task context, or to rewrite an existing draft that feels stiff, overly polished, corporate, formulaic, unnaturally perfect, or full of AI-slop patterns. Preserve supplied facts, meaning, humor, uncertainty, and personal voice when available.
 ---
 
 # Conversational No-AI-Slop
 
-Make the writing sound like the writer on a good day, not like a brand performing humanity.
+Make the writing sound like a person on a good day, not like a brand performing humanity.
 
-Before editing, read [references/conversational-guide.md](references/conversational-guide.md) completely.
+Before writing or editing, read [references/conversational-guide.md](references/conversational-guide.md) completely.
+
+## Choose a mode
+
+- **Edit:** When the user supplies a draft, preserve its meaning and distinctive voice while improving clarity and rhythm.
+- **Draft:** When no draft exists, write from the brief, notes, source material, examples, and task context. Do not require a draft or a writing sample.
+
+Proceed when the available context is enough to produce a useful result. Ask a concise question only when a missing detail would materially change the audience, format, facts, or intent. Otherwise, make a restrained assumption and disclose it.
 
 ## Workflow
 
-1. Read the full draft and any voice samples. Identify the point, audience, facts, vocabulary, cadence, humor, uncertainty, digressions, and current level of polish.
-2. Preserve the writer's real meaning. Never invent a pain point, number, result, motivation, opinion, or personal detail to improve the hook.
-3. Make the piece understandable to someone without prior context. Briefly explain unfamiliar names or references, then keep moving.
-4. Rewrite it like spoken thought. Use contractions, natural connectors, occasional repetition, side comments, and uneven sentence lengths when they sound authentic.
-5. Prefer clarity over grammatical perfection. Allow sentence-opening “And,” “But,” or “So,” casual fragments, and slightly loose syntax when a normal person would say it that way.
-6. Keep one clear idea in short copy. Do not shrink a full article into a tiny summary or force every post into hook, lesson, question.
-7. Run the no-AI-slop check below without polishing away the writer's rough edges.
-8. Read it aloud mentally. If it sounds like a marketer trying to sound casual, rewrite it.
+1. Identify the requested format, point, audience, facts, constraints, and desired level of polish from the available input.
+2. In edit mode, read the full draft and any voice samples. Notice vocabulary, cadence, humor, uncertainty, digressions, and details that make the voice recognizable.
+3. In draft mode, use the supplied brief and context as the factual boundary. Never invent personal experience, pain points, numbers, results, motivations, opinions, testimonials, or other personal details to improve the hook.
+4. Make the piece understandable to someone without prior context. Briefly explain unfamiliar names or references, then keep moving.
+5. Write like spoken thought. Use contractions, natural connectors, occasional repetition, side comments, and uneven sentence lengths when they sound authentic.
+6. Prefer clarity over grammatical perfection. Allow sentence-opening “And,” “But,” or “So,” casual fragments, and slightly loose syntax when a normal person would say it that way.
+7. Keep one clear idea in short copy. Do not shrink a full article into a tiny summary or force every post into hook, lesson, question.
+8. Run the no-AI-slop check below without polishing away authentic rough edges.
+9. Read it aloud mentally. If it sounds like a marketer trying to sound casual, rewrite it.
 
 ## Factual guardrails
 
-- Protect names, numbers, dates, mechanisms, results, and limitations from the source.
+- Protect supplied names, numbers, dates, mechanisms, results, and limitations.
+- Treat the brief, notes, source material, and task context as the factual boundary when drafting from scratch.
+- Do not imply first-person experience or personal endorsement unless the user supplied it.
 - Keep rhetorical exaggeration only when the writer clearly intends it and a reasonable reader will recognize it as exaggeration.
 - Do not turn uncertainty into confidence.
 - Distinguish personal experience from general claims.
-- Flag unsupported claims instead of quietly filling the gap.
+- Flag unsupported claims or missing facts instead of quietly filling the gap.
 
 ## No-AI-slop check
 
@@ -46,4 +56,4 @@ Keep “I think,” “maybe,” “like,” “but,” “so,” or “honestly
 
 ## Output
 
-Return the complete edited draft followed by a short **What changed** section. Flag any claim the source does not support.
+Return the complete piece. In edit mode, follow it with a short **What changed** section. In draft mode, add a short **Assumptions** section only when assumptions materially shaped the result. Flag any claim the supplied material does not support.

@@ -1,53 +1,75 @@
 # Conversational No-AI-Slop
 
-A Codex skill for editing drafts so they sound like the writer talking naturally to a smart friend.
+A portable [Agent Skill](https://agentskills.io) for writing or editing copy so it sounds like a person talking naturally to a smart friend.
 
-It keeps the facts, uncertainty, humor, and odd little details that make a voice recognizable. It also catches the usual AI-writing habits: fake insights, tidy rhetorical formulas, corporate filler, repeated punchlines, and endings that try too hard to sound profound.
+It catches the usual AI-writing habits: fake insights, tidy rhetorical formulas, corporate filler, repeated punchlines, and endings that try too hard to sound profound. When a real voice is present, it protects the facts, uncertainty, humor, and odd little details that make it recognizable.
 
 ## What it does
 
-- Preserves the writer's meaning and personal voice
-- Makes stiff or overly polished copy sound more conversational
-- Protects names, numbers, dates, results, and limitations
-- Flags claims the source does not support
+- Writes new copy from a brief, notes, source material, or task context
+- Edits an existing draft without sanding away the writer's voice
+- Protects supplied names, numbers, dates, results, and limitations
+- Avoids inventing personal experiences, opinions, or endorsements
+- Flags claims the supplied material does not support
 - Works with articles, newsletters, social posts, notes, emails, and similar copy
+
+## Inputs
+
+| Input | Required? | What it provides |
+| --- | --- | --- |
+| Draft | No | Existing meaning, structure, and voice to preserve |
+| Brief or task | Yes | The goal, topic, or requested piece |
+| Notes or sources | No | Facts and details the agent can safely use |
+| Voice samples | No | Extra guidance on vocabulary, rhythm, and humor |
+
+The repository contains no writer data. Every user supplies their own context when they run the skill.
 
 ## Install
 
-Clone the repository into your Codex skills directory:
+This repository follows the open [Agent Skills specification](https://agentskills.io/specification). Clone it into the skills directory used by any compatible agent, or point an agent directly at `SKILL.md`.
+
+For Codex:
 
 ```sh
 git clone https://github.com/willcheung/conversational-no-ai-slop.git \
-  "${CODEX_HOME:-$HOME/.codex}/skills/conversational-no-ai-slop"
+  "$HOME/.agents/skills/conversational-no-ai-slop"
 ```
 
-Start a new Codex task so the skill list refreshes.
+Other agents may use a different skills directory or invocation syntax. Follow that agent's installation documentation.
 
 ## Use it
 
-Invoke the skill by name and provide a draft:
+Create something from a brief:
 
 ```text
-Use $conversational-no-ai-slop to edit this newsletter in my natural voice.
+Use conversational-no-ai-slop to write a short newsletter about why I stopped using daily productivity summaries. Keep it dry and conversational. I usually forgot the summaries within an hour.
 ```
 
-You can also include voice samples or specific constraints:
+Edit an existing draft:
 
 ```text
-Use $conversational-no-ai-slop on this post. Keep the dry humor, don't make it more confident, and use the attached emails as voice samples.
+Use conversational-no-ai-slop to edit this post. Preserve my uncertainty and don't invent stronger results.
+
+[draft]
 ```
 
-The skill returns the complete edited draft, a short summary of what changed, and a warning for any unsupported claims.
+Voice samples and source material are optional. If the task already contains enough information, the agent should proceed without asking for a draft.
+
+## Compatibility
+
+The core skill is vendor-neutral and has no scripts, external tools, or runtime dependencies. Any agent that supports the Agent Skills format can load `SKILL.md` and its reference file. Agents without native skill support can still follow `SKILL.md` as a prompt or instruction file.
+
+The `agents/openai.yaml` file adds optional OpenAI interface metadata. It does not change the core workflow and other agents can ignore it.
 
 ## What's inside
 
-- `SKILL.md` contains the workflow, factual guardrails, and no-AI-slop check.
-- `references/conversational-guide.md` contains the detailed voice guidance and examples.
-- `agents/openai.yaml` provides the display metadata used by Codex.
+- `SKILL.md` contains both operating modes, the workflow, factual guardrails, and the no-AI-slop check.
+- `references/conversational-guide.md` contains detailed voice guidance and examples.
+- `agents/openai.yaml` provides optional OpenAI display metadata.
 
 ## Contributing
 
-Issues and pull requests are welcome. Keep changes focused on preserving a real writer's voice instead of replacing it with a different house style.
+Issues and pull requests are welcome. Keep changes focused on preserving a real person's voice instead of replacing it with a house style.
 
 ## License
 

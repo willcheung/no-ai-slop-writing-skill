@@ -62,6 +62,8 @@ Notice before editing:
 
 Preserve those signals. Do not add sarcasm, slang, profanity, or verbal tics that are missing from the source.
 
+When no draft or voice sample exists, take tone cues only from the user's brief and the task context. Default to clear, conversational language. Do not invent a personal history or impersonate a specific person without source material.
+
 ## Avoid fake casual
 
 Fake casual writing has its own formulas:
