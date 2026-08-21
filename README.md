@@ -31,7 +31,7 @@ This repository follows the open [Agent Skills specification](https://agentskill
 For Codex:
 
 ```sh
-git clone https://github.com/willcheung/conversational-no-ai-slop.git \
+git clone https://github.com/willcheung/no-ai-slop-writing-skill.git \
   "$HOME/.agents/skills/conversational-no-ai-slop"
 ```
 
