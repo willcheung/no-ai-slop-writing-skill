@@ -1,6 +1,6 @@
-# Conversational No-AI-Slop
+# No AI Slop Writing Skill
 
-A portable [Agent Skill](https://agentskills.io) for turning rambling thoughts, notes, or drafts into copy that sounds like a person talking naturally to a smart friend.
+A portable [Agent Skill](https://agentskills.io) for turning rambling thoughts, notes, or drafts into clear, natural writing without flattening the writer's voice.
 
 It catches the usual AI-writing habits: fake insights, tidy rhetorical formulas, corporate filler, repeated punchlines, and endings that try too hard to sound profound. When a real voice is present, it protects the facts, uncertainty, humor, and odd little details that make it recognizable.
 
