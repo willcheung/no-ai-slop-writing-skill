@@ -1,12 +1,15 @@
 # Conversational No-AI-Slop
 
-A portable [Agent Skill](https://agentskills.io) for writing or editing copy so it sounds like a person talking naturally to a smart friend.
+A portable [Agent Skill](https://agentskills.io) for turning rambling thoughts, notes, or drafts into copy that sounds like a person talking naturally to a smart friend.
 
 It catches the usual AI-writing habits: fake insights, tidy rhetorical formulas, corporate filler, repeated punchlines, and endings that try too hard to sound profound. When a real voice is present, it protects the facts, uncertainty, humor, and odd little details that make it recognizable.
 
 ## What it does
 
 - Writes new copy from a brief, notes, source material, or task context
+- Develops a ramble, voice transcript, or brain dump into a coherent piece
+- Asks focused questions when an important blank requires the user's experience or opinion
+- Expands supported ideas and keeps brainstormed possibilities clearly labeled
 - Edits an existing draft without sanding away the writer's voice
 - Protects supplied names, numbers, dates, results, and limitations
 - Avoids inventing personal experiences, opinions, or endorsements
@@ -17,12 +20,13 @@ It catches the usual AI-writing habits: fake insights, tidy rhetorical formulas,
 
 | Input | Required? | What it provides |
 | --- | --- | --- |
+| Ramble, transcript, or brain dump | No | Raw thoughts, unfinished connections, and natural voice |
 | Draft | No | Existing meaning, structure, and voice to preserve |
-| Brief or task | Yes | The goal, topic, or requested piece |
+| Brief or task | No | The goal, topic, or requested piece |
 | Notes or sources | No | Facts and details the agent can safely use |
 | Voice samples | No | Extra guidance on vocabulary, rhythm, and humor |
 
-The repository contains no writer data. Every user supplies their own context when they run the skill.
+Provide at least one starting input: a ramble, draft, brief, notes, source material, or a clear task. The repository contains no writer data. Every user supplies their own context when they run the skill.
 
 ## Install
 
@@ -45,6 +49,14 @@ Create something from a brief:
 Use conversational-no-ai-slop to write a short newsletter about why I stopped using daily productivity summaries. Keep it dry and conversational. I usually forgot the summaries within an hour.
 ```
 
+Develop a rambling thought:
+
+```text
+Use conversational-no-ai-slop to turn this ramble into an article. Fill in connections that are supported by what I said. If an important example, fact, or opinion is missing, ask me a few focused questions before drafting. Don't make it up.
+
+[ramble or transcript]
+```
+
 Edit an existing draft:
 
 ```text
@@ -53,7 +65,7 @@ Use conversational-no-ai-slop to edit this post. Preserve my uncertainty and don
 [draft]
 ```
 
-Voice samples and source material are optional. If the task already contains enough information, the agent should proceed without asking for a draft.
+Voice samples and source material are optional. If the ramble already contains enough information, the agent should proceed. If the missing material must come from the writer, it should ask instead of guessing.
 
 ## Compatibility
 
@@ -63,7 +75,7 @@ The `agents/openai.yaml` file adds optional OpenAI interface metadata. It does n
 
 ## What's inside
 
-- `SKILL.md` contains both operating modes, the workflow, factual guardrails, and the no-AI-slop check.
+- `SKILL.md` contains develop, edit, and draft modes, plus the workflow, factual guardrails, and the no-AI-slop check.
 - `references/conversational-guide.md` contains detailed voice guidance and examples.
 - `agents/openai.yaml` provides optional OpenAI display metadata.
 

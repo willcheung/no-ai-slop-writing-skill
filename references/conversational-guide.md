@@ -66,6 +66,21 @@ When no draft or voice sample exists, take tone cues only from the user's brief 
 
 When several voice samples exist, build a small working profile from recurring evidence: how the writer opens, how they explain technical details, how strongly they judge things, where they use humor, and how they handle failures or caveats. Separate stable voice traits from topic-specific formatting. Apply the profile during the current task; do not paste source passages or force every observed habit into the new piece.
 
+## From ramble to draft
+
+A ramble is source material, not a bad draft. Read it for four things:
+
+- **Spine:** The thought the writer keeps returning to
+- **Live wires:** Specific phrases, reactions, tensions, or examples carrying real energy
+- **Support:** Facts, experiences, reasoning, and evidence already available
+- **Open loops:** Places where an important connection, example, opinion, or conclusion is missing
+
+Organize and expand the spine without flattening the live wires. Safe expansion includes spelling out an implication, connecting two supplied observations, explaining a term, or proposing possible directions as brainstorms. Unsafe expansion includes inventing why the writer cared, how something felt, what happened, what another person thought, or which conclusion the writer prefers.
+
+When an open loop controls the piece, ask a concrete question tied to it. “What happened when you tried it?” is more useful than “Can you provide more context?” Keep the first round to the few questions that would change the draft most.
+
+If the user asks to brainstorm, generate options freely but label them as options. Bring an option into the finished draft only after the user selects it or the supplied material already supports it.
+
 ## Avoid fake casual
 
 Fake casual writing has its own formulas:

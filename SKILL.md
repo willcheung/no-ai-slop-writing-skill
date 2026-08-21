@@ -1,6 +1,6 @@
 ---
 name: conversational-no-ai-slop
-description: Write or edit articles, newsletters, social posts, notes, emails, and other copy so it sounds like a person talking naturally to a smart friend. Use to create copy from a brief, notes, source material, or task context, or to rewrite an existing draft that feels stiff, overly polished, corporate, formulaic, unnaturally perfect, or full of AI-slop patterns. Preserve supplied facts, meaning, humor, uncertainty, and personal voice when available.
+description: Develop rambling thoughts, voice transcripts, brain dumps, incomplete notes, briefs, or drafts into articles, newsletters, social posts, emails, and other natural copy. Use when an agent should organize a user's thinking, help brainstorm, fill supported gaps, ask about unsupported gaps, expand ideas without inventing personal facts or opinions, or edit writing that feels stiff, corporate, formulaic, or full of AI slop. Preserve supplied meaning, facts, humor, uncertainty, and personal voice.
 ---
 
 # Conversational No-AI-Slop
@@ -11,10 +11,21 @@ Before writing or editing, read [references/conversational-guide.md](references/
 
 ## Choose a mode
 
+- **Develop:** When the user supplies a ramble, transcript, brain dump, or incomplete notes, find the idea inside it and develop it collaboratively.
 - **Edit:** When the user supplies a draft, preserve its meaning and distinctive voice while improving clarity and rhythm.
 - **Draft:** When no draft exists, write from the brief, notes, source material, examples, and task context. Do not require a draft or a writing sample.
 
-Proceed when the available context is enough to produce a useful result. Ask a concise question only when a missing detail would materially change the audience, format, facts, or intent. Otherwise, make a restrained assumption and disclose it.
+Proceed when the available context is enough to produce a useful result. Ask when a missing detail would materially change the point, audience, facts, personal meaning, or conclusion. Never fill a user-owned gap with a plausible invention.
+
+## Develop a ramble
+
+1. Read the entire input before imposing an outline. Separate the central idea, supporting thoughts, examples, tensions, memorable phrases, factual claims, and unfinished threads.
+2. Preserve the user's interesting language and reasoning, including uncertainty, contradictions, detours, and ideas that are still forming.
+3. Expand ideas by unpacking implications already present, connecting related supplied points, explaining necessary context, and offering clearly labeled brainstorm options.
+4. Do not invent personal experiences, motivations, opinions, results, examples, or facts. Do not silently choose what the user believes when the ramble supports several interpretations.
+5. If a core gap requires the user, briefly reflect the likely point and ask one to three high-leverage questions. Ask another small round only if the answers expose a new material gap.
+6. If a gap is optional, omit it or mark it for later instead of blocking the draft. If external research could answer it, offer to research rather than guessing.
+7. Once the core is supported, turn the material into the requested format. The draft may be more organized than the ramble, but it should still feel like the same person thinking.
 
 ## Workflow
 
@@ -33,6 +44,8 @@ Proceed when the available context is enough to produce a useful result. Ask a c
 
 - Protect supplied names, numbers, dates, mechanisms, results, and limitations.
 - Treat the brief, notes, source material, and task context as the factual boundary when drafting from scratch.
+- Distinguish a supported inference from a new fact. Explain an inference when useful; ask for or research a new fact.
+- Keep brainstormed possibilities clearly labeled until the user accepts them. Do not quietly convert a suggestion into the user's opinion or experience.
 - Do not imply first-person experience or personal endorsement unless the user supplied it.
 - Keep rhetorical exaggeration only when the writer clearly intends it and a reasonable reader will recognize it as exaggeration.
 - Do not turn uncertainty into confidence.
@@ -61,4 +74,4 @@ Treat detector scores as noisy diagnostics, not proof of authorship or a writing
 
 ## Output
 
-Return the complete piece. In edit mode, follow it with a short **What changed** section. In draft mode, add a short **Assumptions** section only when assumptions materially shaped the result. Flag any claim the supplied material does not support.
+In develop mode, ask questions before drafting only when core material is missing. Otherwise return the complete piece, followed by a short **What I developed** section that distinguishes reorganized material, supported expansion, and any unresolved gap. In edit mode, follow the piece with a short **What changed** section. In draft mode, add a short **Assumptions** section only when assumptions materially shaped the result. Flag any claim the supplied material does not support.
