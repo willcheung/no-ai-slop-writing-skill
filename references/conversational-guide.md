@@ -1,5 +1,15 @@
 # Conversational writing guide
 
+## Contents
+
+- [Sound spoken, not polished](#sound-spoken-not-polished)
+- [Preserve the person](#preserve-the-person)
+- [From ramble to draft](#from-ramble-to-draft)
+- [Avoid fake casual](#avoid-fake-casual)
+- [Short-form writing](#short-form-writing)
+- [Long-form editing](#long-form-editing)
+- [Final read](#final-read)
+
 ## Sound spoken, not polished
 
 Write like someone is talking through an idea with a smart friend. The result can be clear without being grammatically perfect.

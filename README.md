@@ -26,7 +26,7 @@ It catches the usual AI-writing habits: fake insights, tidy rhetorical formulas,
 | Notes or sources | No | Facts and details the agent can safely use |
 | Voice samples | No | Extra guidance on vocabulary, rhythm, and humor |
 
-Provide at least one starting input: a ramble, draft, brief, notes, source material, or a clear task. The repository contains no writer data. Every user supplies their own context when they run the skill.
+Provide at least one starting input: a ramble, draft, brief, notes, source material, or a clear task. The repository does not contain copies of anyone's articles. It includes an optional voice profile derived from four public, mostly handwritten Will Cheung articles; other users receive the general workflow unless they explicitly request that profile.
 
 ## Install
 
@@ -65,6 +65,14 @@ Use conversational-no-ai-slop to edit this post. Preserve my uncertainty and don
 [draft]
 ```
 
+Use the bundled Will Cheung voice profile:
+
+```text
+Use conversational-no-ai-slop to develop this ramble in Will Cheung's voice. Preserve my small word choices and natural roughness. Ask me about any missing personal detail instead of inventing it.
+
+[ramble]
+```
+
 Voice samples and source material are optional. If the ramble already contains enough information, the agent should proceed. If the missing material must come from the writer, it should ask instead of guessing.
 
 ## Compatibility
@@ -77,6 +85,7 @@ The `agents/openai.yaml` file adds optional OpenAI interface metadata. It does n
 
 - `SKILL.md` contains develop, edit, and draft modes, plus the workflow, factual guardrails, and the no-AI-slop check.
 - `references/conversational-guide.md` contains detailed voice guidance and examples.
+- `references/will-cheung-voice.md` contains an optional profile of Will's recurring language decisions and nuances, not copies of the source articles.
 - `agents/openai.yaml` provides optional OpenAI display metadata.
 
 ## Contributing

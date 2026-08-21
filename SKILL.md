@@ -7,7 +7,7 @@ description: Develop rambling thoughts, voice transcripts, brain dumps, incomple
 
 Make the writing sound like a person on a good day, not like a brand performing humanity.
 
-Before writing or editing, read [references/conversational-guide.md](references/conversational-guide.md) completely.
+Before writing or editing, read [references/conversational-guide.md](references/conversational-guide.md) completely. When the user explicitly requests Will Cheung's voice or identifies themself as the writer of the bundled samples, also read [references/will-cheung-voice.md](references/will-cheung-voice.md) completely. Do not apply that profile to other writers by default.
 
 ## Choose a mode
 
@@ -54,19 +54,19 @@ Proceed when the available context is enough to produce a useful result. Ask whe
 
 ## No-AI-slop check
 
-Remove:
+Watch for these patterns. Remove or vary them when they are automatic, repeated, or unsupported; preserve them when the source shows they are part of the writer's real voice:
 
-- Binary “not X, but Y” constructions
+- Repeated binary “not X, but Y” constructions
 - Throat-clearing such as “here's the thing”
 - Faux insights such as “what everyone gets wrong”
-- Colon reveals and self-answered rhetorical questions
+- Formulaic colon reveals and self-answered rhetorical questions
 - Generic takeaways that could belong to anyone
 - Repeated punchline fragments and robotic paragraph symmetry
 - Importance puffery, fake-profound endings, and recap conclusions
 - Decorative em dashes in short copy
 - Inflated words such as “leverage,” “robust,” “transformative,” “game changer,” “delve,” “streamline,” “elevate,” and “unlock”
 
-Keep “I think,” “maybe,” “like,” “but,” “so,” or “honestly” when they carry real uncertainty, emphasis, or spoken rhythm. Do not remove them just to satisfy formal grammar.
+Source evidence outranks a generic style blacklist. Keep “I think,” “maybe,” “like,” “but,” “so,” or “honestly” when they carry real uncertainty, emphasis, or spoken rhythm. Do not remove them just to satisfy formal grammar.
 
 ## AI-detector results
 
