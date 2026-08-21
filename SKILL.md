@@ -1,13 +1,13 @@
 ---
 name: conversational-no-ai-slop
-description: Develop rambling thoughts, voice transcripts, brain dumps, incomplete notes, briefs, or drafts into articles, newsletters, social posts, emails, and other natural copy. Use when an agent should organize a user's thinking, help brainstorm, fill supported gaps, ask about unsupported gaps, expand ideas without inventing personal facts or opinions, or edit writing that feels stiff, corporate, formulaic, or full of AI slop. Preserve supplied meaning, facts, humor, uncertainty, and personal voice.
+description: Write, develop, or edit posts, articles, newsletters, social copy, emails, and other natural writing from rambling thoughts, voice transcripts, brain dumps, incomplete notes, briefs, or drafts. Use when a user says they want to write a post, asks to write as themselves or in their voice, wants help brainstorming or expanding thoughts, or wants writing made less stiff, corporate, formulaic, or full of AI slop. Fill supported gaps, ask about unsupported gaps, and preserve supplied meaning, facts, humor, uncertainty, and personal voice without inventing personal details or opinions.
 ---
 
 # Conversational No-AI-Slop
 
 Make the writing sound like a person on a good day, not like a brand performing humanity.
 
-Before writing or editing, read [references/conversational-guide.md](references/conversational-guide.md) completely. When the user explicitly requests Will Cheung's voice or identifies themself as the writer of the bundled samples, also read [references/will-cheung-voice.md](references/will-cheung-voice.md) completely. Do not apply that profile to other writers by default.
+Before writing or editing, read [references/conversational-guide.md](references/conversational-guide.md) completely. When the user explicitly requests Will Cheung's voice, identifies themself as the writer of the bundled samples, or asks to “write as me” while active instructions identify them as Will, also read [references/will-cheung-voice.md](references/will-cheung-voice.md) completely. Do not apply that profile to other writers by default.
 
 ## Choose a mode
 

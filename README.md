@@ -75,6 +75,18 @@ Use conversational-no-ai-slop to develop this ramble in Will Cheung's voice. Pre
 
 Voice samples and source material are optional. If the ramble already contains enough information, the agent should proceed. If the missing material must come from the writer, it should ask instead of guessing.
 
+## Automatic use and persistent voice
+
+Compatible agents may invoke the skill automatically when a request matches its description. The description includes phrases such as “write a post,” “write as me,” and “in my voice” to make that match more reliable. Because implicit skill selection is still an agent decision, use a persistent project or global instruction when the voice must always be applied.
+
+For Will Cheung, use this instruction:
+
+```text
+Whenever I say I'm writing, drafting, or developing a post, article, newsletter, or social copy, automatically use conversational-no-ai-slop and load references/will-cheung-voice.md. Treat me as Will Cheung and write in my voice unless I explicitly request another voice.
+```
+
+Put the instruction in the writing project's persistent instructions when it should apply only there. Put it in the agent's global user instructions when it should apply to every writing task. The skill remains portable: other users get the general workflow or can provide their own samples rather than inheriting Will's profile.
+
 ## Compatibility
 
 The core skill is vendor-neutral and has no scripts, external tools, or runtime dependencies. Any agent that supports the Agent Skills format can load `SKILL.md` and its reference file. Agents without native skill support can still follow `SKILL.md` as a prompt or instruction file.
@@ -85,7 +97,7 @@ The `agents/openai.yaml` file adds optional OpenAI interface metadata. It does n
 
 - `SKILL.md` contains develop, edit, and draft modes, plus the workflow, factual guardrails, and the no-AI-slop check.
 - `references/conversational-guide.md` contains detailed voice guidance and examples.
-- `references/will-cheung-voice.md` contains an optional profile of Will's recurring language decisions and nuances, not copies of the source articles.
+- `references/will-cheung-voice.md` contains an optional profile of Will's recurring language decisions and nuances across samples from 2016–2025, not copies of the source articles.
 - `agents/openai.yaml` provides optional OpenAI display metadata.
 
 ## Contributing
