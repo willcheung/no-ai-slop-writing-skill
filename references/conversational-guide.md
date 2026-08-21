@@ -91,6 +91,14 @@ Give a short post one useful idea. It can be:
 
 Vary the shape. Do not end every post with a question or force every thought into a lesson.
 
+## Long-form editing
+
+Long articles often accumulate a different kind of slop: the same mechanism explained twice, every section built to the same length, and a conclusion that repeats the headline in grander language.
+
+Edit those pieces surgically before rewriting whole passages. Preserve the writer's specific nouns, technical details, private shorthand, odd jokes, and sentences with natural roughness. Those details carry more voice than an added conversational phrase ever will.
+
+Do not optimize prose for an AI detector. Detector scores are heuristic and can punish clean human writing or reward artificially noisy writing. Use a score as one signal alongside the actual editorial questions: Is the piece specific? Does it sound like this writer? Is it clear? Is it true?
+
 ## Final read
 
 Ask:

@@ -19,14 +19,15 @@ Proceed when the available context is enough to produce a useful result. Ask a c
 ## Workflow
 
 1. Identify the requested format, point, audience, facts, constraints, and desired level of polish from the available input.
-2. In edit mode, read the full draft and any voice samples. Notice vocabulary, cadence, humor, uncertainty, digressions, and details that make the voice recognizable.
+2. In edit mode, read the full draft and any voice samples. Notice vocabulary, cadence, humor, uncertainty, digressions, and details that make the voice recognizable. Start with selective editing. Regenerate whole passages only when their structure is the problem; a clean rewrite can erase the writer's fingerprints.
 3. In draft mode, use the supplied brief and context as the factual boundary. Never invent personal experience, pain points, numbers, results, motivations, opinions, testimonials, or other personal details to improve the hook.
 4. Make the piece understandable to someone without prior context. Briefly explain unfamiliar names or references, then keep moving.
 5. Write like spoken thought. Use contractions, natural connectors, occasional repetition, side comments, and uneven sentence lengths when they sound authentic.
 6. Prefer clarity over grammatical perfection. Allow sentence-opening “And,” “But,” or “So,” casual fragments, and slightly loose syntax when a normal person would say it that way.
 7. Keep one clear idea in short copy. Do not shrink a full article into a tiny summary or force every post into hook, lesson, question.
-8. Run the no-AI-slop check below without polishing away authentic rough edges.
-9. Read it aloud mentally. If it sounds like a marketer trying to sound casual, rewrite it.
+8. For long-form work, remove duplicated explanations, overly even paragraph shapes, repeated contrast templates, and conclusions that restate the thesis. Keep concrete build details, odd phrasing, and dry asides that belong to the writer.
+9. Run the no-AI-slop check below without polishing away authentic rough edges.
+10. Read it aloud mentally. If it sounds like a marketer trying to sound casual, rewrite it.
 
 ## Factual guardrails
 
@@ -53,6 +54,10 @@ Remove:
 - Inflated words such as “leverage,” “robust,” “transformative,” “game changer,” “delve,” “streamline,” “elevate,” and “unlock”
 
 Keep “I think,” “maybe,” “like,” “but,” “so,” or “honestly” when they carry real uncertainty, emphasis, or spoken rhythm. Do not remove them just to satisfy formal grammar.
+
+## AI-detector results
+
+Treat detector scores as noisy diagnostics, not proof of authorship or a writing target. Never add fake errors, random phrasing, or factual distortion to lower a score. If a rewrite scores worse, return to the source and make a lighter edit that preserves more of the writer's original language. Report the result honestly when the user asks for detector testing.
 
 ## Output
 
